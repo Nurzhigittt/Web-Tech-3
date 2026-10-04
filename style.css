@@ -1,1 +1,108 @@
 
+
+h1 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+.box{
+    border: 1px solid;
+    padding:20px;
+}
+@media(min-width: 768px){
+    .boxes{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 992px){
+    .boxes{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.portfolio {
+    padding: 10px;
+}
+
+.portfolio .card,
+.portfolio .box {
+    margin-bottom: 10px;
+}
+
+.portfolio h3 {
+    font-size: 18px;
+}
+
+.extra-info {
+    display: none;
+}
+
+.portfolio-footer {
+    border-top: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .portfolio {
+        padding: 20px;
+    }
+
+    .portfolio h3 {
+        font-size: 22px;
+    }
+
+    .extra-info {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .portfolio {
+        padding: 30px;
+    }
+
+    .portfolio h3 {
+        font-size: 26px;
+    }
+}
